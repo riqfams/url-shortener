@@ -1,14 +1,19 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { GeistSans } from "geist/font/sans"
-import { GeistMono } from "geist/font/mono"
+import { Fira_Sans } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import { Toaster } from "@/components/ui/toaster"
 import { Suspense } from "react"
 import "./globals.css"
 
+const firaSans = Fira_Sans({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-fira-sans",
+})
+
 export const metadata: Metadata = {
-  title: "LinkShort - URL Shortener",
+  title: "Shorto - URL Shortener",
   description: "Shorten your links, amplify your reach. Fast, reliable URL shortening service.",
   generator: "v0.app",
 }
@@ -20,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable}`}>
+      <body className={`font-sans ${firaSans.variable}`}>
         <Suspense fallback={null}>
           {children}
           <Toaster />

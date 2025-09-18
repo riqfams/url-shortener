@@ -46,7 +46,7 @@ export async function generateMetadata({ params }: PageProps) {
   const { slug } = await params
 
   return {
-    title: `Redirecting... | LinkShort`,
+    title: `Redirecting... | Shorto`,
     description: `Redirecting to the original URL for ${slug}`,
   }
 }
