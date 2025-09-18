@@ -7,22 +7,22 @@ export default function HomePage() {
     <div className="min-h-screen">
       {/* Header */}
       <header className="sticky top-0 z-50 w-full border-b bg-background/80 backdrop-blur-xl supports-[backdrop-filter]:bg-background/60">
-        <div className="container flex h-16 items-center">
-          <div className="mr-4 flex">
-            <Link href="/" className="mr-6 flex items-center space-x-2">
-              <Zap className="h-7 w-7 text-accent" />
-              <span className="font-bold text-2xl">Shorto</span>
-            </Link>
-          </div>
-          <div className="flex flex-1 items-center justify-between space-x-2 md:justify-end">
-            <nav className="flex items-center space-x-6 text-sm font-medium">
-              <a href="#features" className="text-foreground/70 hover:text-accent transition-colors">
-                Features
-              </a>
-              <a href="#about" className="text-foreground/70 hover:text-accent transition-colors">
-                About
-              </a>
-            </nav>
+        <div className="container mx-auto px-4 py-6">
+          <div className="flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
+            <div className="flex items-center space-x-3">
+                <Zap className="h-6 w-6 text-accent" />
+                <span className="font-semibold text-xl">Shorto</span>
+              </div>
+            <div className="flex flex-1 items-center justify-between space-x-2 md:justify-end">
+              <nav className="flex items-center space-x-6 text-sm font-medium">
+                <a href="#features" className="text-foreground/70 hover:text-accent transition-colors">
+                  Features
+                </a>
+                <a href="#about" className="text-foreground/70 hover:text-accent transition-colors">
+                  About
+                </a>
+              </nav>
+            </div>
           </div>
         </div>
       </header>
