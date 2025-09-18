@@ -37,7 +37,7 @@ export default function HomePage() {
                 Amplify Your Reach
               </span>
             </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground text-pretty max-w-3xl leading-relaxed">
+            <p className="text-xl md:text-2xl text-muted-foreground text-pretty leading-relaxed">
               Transform long, unwieldy URLs into clean, shareable links. Perfect for social media, marketing campaigns,
               and professional communications.
             </p>
